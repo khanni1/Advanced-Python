@@ -18,5 +18,29 @@ print(large(Statement))
 # Write a lambda function to remainder of 2 number
 x = lambda a,b: a%b
 
-print(x(10,6)) 
+print(x(10,6))
+
+# Find a factorial of 5 to 10
+fact = lambda x: x*fact(x-1) if x != 0 else 1
+
+for i in range(5,11,1):
+    print(fact(i))
+    
+    
+# List answer  will be second highest
+lst1 = [10,20,320,10,430,102,43,500]
+
+second_high = lambda lst: sorted(lst,reverse=True)[1]
+
+print(second_high(lst1))
+
+# Find the LCM of 2 numbers
+# first find GCD
+gcd = lambda a,b: a if b == 0 else gcd(b,a%b)
+
+lcm = lambda a,b : (a*b) // gcd(a,b)
+
+print("GCD : ",gcd(135,225))
+print("LCM : ",lcm(135,225))
+ 
 
