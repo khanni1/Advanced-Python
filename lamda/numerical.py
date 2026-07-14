@@ -42,5 +42,14 @@ lcm = lambda a,b : (a*b) // gcd(a,b)
 
 print("GCD : ",gcd(135,225))
 print("LCM : ",lcm(135,225))
- 
+
+# Find the student with the highest result.(using dictonary)
+students = {"Ramu" : 100,"Shamu" : 90,"Tamu" : 25,"Mamu" : 78, "Aura_man" : 100}
+
+find_keys = lambda d,val: [k for k,v in  d.items() if v == val]
+
+find_highest_marks = lambda d: find_keys(d,max(list(d.values())))
+
+print(find_highest_marks(students))
+
 
