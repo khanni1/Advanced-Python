@@ -1,15 +1,15 @@
+@REM  merge main to other branch
+
 @echo off
 
-set /p branch_name=ENTER BRANCH NAME xyz - main:
+set /p branch_name=ENTER BRANCH NAME MAIN - xyz :
 
-set /p ff_option=Merging only if ff is possible (y/n) or just press enter: 
+@REM set /p ff_option=Merging only if ff is possible (y/n): 
 echo.
 
-if /I "%ff_option%"=="n" (
-    git merge "%branch_name%"
-) else (
-    git merge --ff-only "%branch_name%"
-)
+git checkout "%branch_name%"
+git merge main
+
 
 @REM below keep as it is just displaying no need to alter
 
