@@ -29,9 +29,12 @@ for i in range(-13,28,1):
     xcord.append(ansx)
     ycord.append(ansy)
     
+    
+# numpy used here
 x1 = np.array(xcord)
 y1 = np.array(ycord)
 
+# matplotlib usedd from here
 plt.plot(x1,y1,marker='o')
 plt.grid(True)
 plt.show()
