@@ -22,6 +22,7 @@ pause
 git config --global user.email
 git config --global user.name
 echo.
+git checkout main
 pause
 git status
 echo.
