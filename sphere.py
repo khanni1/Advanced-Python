@@ -19,24 +19,14 @@ step = 1
 
 for i in np.arange(-r,r+step,step):
     
-    xrow = []
-    yrow = []
-    z1row = []
-    z2row = []
-    
     for j in np.arange(-r,r+step,step):
         
         a,b = plot_sphere(r,i,j)
-        xrow.append(i)
-        yrow.append(j)
-        z1row.append(a)
-        z2row.append(b)
-        
-    xdata.append(xrow)
-    ydata.append(yrow)
-    z1data.append(z1row)
-    z2data.append(z2row)
-        
+        xdata.append(i)
+        ydata.append(j)
+        z1data.append(a)
+        z2data.append(b)
+
 
 
 fig = plt.figure()
@@ -51,8 +41,8 @@ z2data = np.array(z2data)
 # plt.ylim(-12,12)
 # plt.clim(-12,12)
 
-f1.plot_surface(xdata,ydata,z1data)
-f1.plot_surface(xdata,ydata,z2data)
+f1.plot_trisurf(xdata,ydata,z1data)
+f1.plot_trisurf(xdata,ydata,z2data)
 
 f1.set_box_aspect((1, 1, 1)) 
 # set_box_aspect just scales according to factor like z is scaled 1.9 comapred to x and y
