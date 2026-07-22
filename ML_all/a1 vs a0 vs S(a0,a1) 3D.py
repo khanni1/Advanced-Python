@@ -25,12 +25,12 @@ z_data = []
 
 # 2d array in array.
 
-for i in np.arange(-2, 2, 0.1):
+for i in np.arange(-2.1, 1.91, 0.01):
     # clean for next loop
     x_row = []
     y_row = []
     z_row = []
-    for j in np.arange(-0.7, 2.7, 0.1):
+    for j in np.arange(-1.3, 2.71, 0.01):
         x, y, z = S(i, j)
         x_row.append(x)
         y_row.append(y)
@@ -49,9 +49,10 @@ f1 = fig.add_subplot(projection='3d')
 
 f1.plot_surface(x,y,z,cmap="viridis")
 
+
 f1.set_xlabel("a0")
 f1.set_ylabel("a1")
 f1.set_zlabel("S(a0, a1)")
-f1.set_box_aspect((2, 0.2, 1)) 
+# f1.set_box_aspect((2, 0.2, 1)) 
 
 plt.show()
