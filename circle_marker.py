@@ -18,7 +18,7 @@ y_cord1 = []  # Top half
 y_cord2 = []  # Bottom half
 
 r = 10
-step = 0.01
+step = 1
 
 # make step smaller to see smoother circle but range negative r to positive r
 for i in np.arange(-r, r + step,step):
