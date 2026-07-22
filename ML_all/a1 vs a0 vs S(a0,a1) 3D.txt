@@ -1,3 +1,5 @@
+GEMMINI Pro
+
 @Pro  my code is independent of effect 
 or swapping for loops for i and j. or using 
 1D x,y,z array with trisurf ?
