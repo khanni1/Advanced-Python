@@ -11,3 +11,37 @@ vs code
 
 jupyter runs on local host type thing editor
 
+-----------------------------------------------------------
+gemini
+To get suggestions in a Jupyter Notebook, press the  key while typing a variable, function name, or file path. If you want suggestions to appear automatically as you type without pressing , you can configure the built-in settings or extensions depending on your Jupyter version. [1, 2, 3, 4, 5]  
+1. Built-in Keyboard Shortcuts (All Versions) 
+
+• Code Suggestions: Type a few letters and press . 
+• Function Documentation: Press  inside a function's parentheses to view its syntax and parameters. 
+• Detailed Help: Add a  to the end of any function or variable and run the cell to open the documentation panel. [1, 2, 4, 5, 6]  
+
+2. Enable Auto-Suggestions As You Type (Jupyter Notebook 7+) 
+If you are using the modern Jupyter Notebook v7 or greater, you can enable continuous code completion directly in the settings without downloading extensions: 
+
+1. Click Settings in the top menu bar. 
+2. Select Settings Editor from the dropdown. 
+3. Click on Code Completion in the left sidebar. 
+4. Check the box for Enable Autocompletion. [4]  
+
+3. Enable Auto-Suggestions (Jupyter Notebook 6 and Older) 
+Older versions of Jupyter require an extension called  to enable automatic pop-up suggestions. 
+
+1. Close your active notebook. 
+2. Open your terminal or Anaconda Prompt and run: 
+3. Restart Jupyter Notebook. 
+4. Go to the newly available Nbextensions tab on the Jupyter home screen. 
+5. Find Hinterland in the list and check the box to enable it. [7, 8, 9]  
+
+4. Alternative: Use Jupyter in VS Code 
+If you want robust, lightning-fast IntelliSense and autocomplete out of the box, consider opening your  files in VS Code using the  Python and Jupyter extensions . This requires zero configuration for auto-suggestions. [10]  
+If you are encountering any error messages or if the suggestions are blank, let me know: 
+
+• Which Jupyter version or IDE are you using? 
+• What operating system (Windows, Mac, Linux) are you on? 
+• Are you missing suggestions for built-in Python functions or external libraries (like pandas or numpy)? [3]  
+
